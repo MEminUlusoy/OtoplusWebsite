@@ -17,8 +17,8 @@ app.get('/', (req,res)=>{
     res.render('site/home');
 })
 
-app.get('/contact', (req,res)=>{
-    res.render('site/contact');
+app.get('/sell', (req,res)=>{
+    res.render('site/sell');
 })
 
 
