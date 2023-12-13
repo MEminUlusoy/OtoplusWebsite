@@ -17,6 +17,10 @@ app.get('/', (req,res)=>{
     res.render('site/home');
 })
 
+app.get('/carlist', (req,res)=>{
+    res.render('site/carlist');
+})
+
 app.get('/sell', (req,res)=>{
     res.render('site/sell');
 })
