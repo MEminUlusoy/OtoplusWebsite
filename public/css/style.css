@@ -14,10 +14,6 @@ nav{
     display: flex;
 }
 
-
-
-
-
 nav .left{
     height: 100%;
     width: 26%;
@@ -34,10 +30,6 @@ nav .left img{
     cursor: pointer;
 }
 
-
-
-
-
 nav .middle{
     height: 100%;
     width: 39%;
@@ -46,8 +38,6 @@ nav .middle{
     align-items: center;
 
 }
-
-
 
 nav .middle ul{
     display: flex;
@@ -67,10 +57,6 @@ nav .middle ul li a{
     
 }
 
-
-
-
-
 nav .right{
     height: 100%;
     width: 35%;
@@ -79,7 +65,6 @@ nav .right{
     align-items: center;
     
 }
-
 
 nav .right button{
     height: 47px;
@@ -96,7 +81,6 @@ nav .right button{
     font-weight: bold;
 }
 
-
 nav .right button:hover{
     background-color: #FF3F55;
     border: 1px solid #FF3F55;
@@ -104,9 +88,6 @@ nav .right button:hover{
     transition: ease-in 0.3s;
     color: white;
 }
-
-
-
 
 
 /*-------------------- MAIN ---------------------------- */
@@ -120,7 +101,6 @@ main{
     justify-content: center;
     align-items: center;
 }
-
 
 main .image-container{
     height: 100%;
@@ -137,7 +117,6 @@ main .image-container img{
     z-index: 1;
 }
 
-
 main .inner{
     
     height: 100%;
@@ -146,7 +125,6 @@ main .inner{
     z-index: 2;
     display: flex;
 }
-
 
 /*-------------------- Main left container ---------------------------- */
 
@@ -158,9 +136,7 @@ main .inner .left{
     justify-content: center;
     align-items: center;
     
-    
 }
-
 
 main .inner .left .left-inner{
     
@@ -1038,3 +1014,113 @@ footer .bottom .icon-container .right i{
     margin-right: 20px;
     cursor: pointer;
 }
+
+/*-------------------- CARLIST ---------------------------- */
+.carlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    width: 100%;
+    position: relative;
+}
+.carlist-bars{
+    width: 100%;
+    height: 80px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+.carlist-search{
+    grid-column: 1/2 ;
+}
+.search-container{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+.carlist-ordertype{
+    grid-column: 2/3 ;
+}
+
+.carlist-sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .carlist-sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .carlist-sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .carlist-cars {
+    margin-left: 160px; /* Same as the width of the carlist-sidebar */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .carlist-sidebar {padding-top: 15px;}
+    .carlist-sidebar a {font-size: 18px;}
+  }
+
+  .carlist-dropdown {
+    min-width: 150px;
+    position: relative;
+  }
+  
+  .carlist-dropdown select {
+    appearance: none;
+    /*  safari  */
+    -webkit-appearance: none;
+    /*  other styles for aesthetics */
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .carlist-dropdown::before,
+  .carlist-dropdown::after {
+    --size: 0.3rem;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+  }
+  
+  .carlist-dropdown::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid black;
+    top: 40%;
+  }
+  
+  .carlist-dropdown::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid black;
+    top: 55%;
+  }
+  
