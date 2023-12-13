@@ -680,7 +680,7 @@ main .right .pricing-inner-container .pricing-inner-icon span{
 .sell-container .sell-inner-container .sell-inner-left{
     height: 100%;
     width: 50%;
-    background-color: #FAFAFA;
+    
     display: flex;
     flex-direction: column;
     
@@ -723,12 +723,20 @@ main .right .pricing-inner-container .pricing-inner-icon span{
 
 .sell-container .sell-inner-container .sell-inner-left .left-inputs .left-inner-inputs .select-inner{
     border: green solid 2px;
+    height: 50px;
     width: 100%;
-    height: 50%;
+    
     
 }
 
 
+.sell-container .sell-inner-container .sell-inner-left .left-inputs .left-inner-inputs .select-inner select{
+    
+    height: 30px;
+    width: 100%;
+    
+    
+}
 
 
 
