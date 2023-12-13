@@ -656,10 +656,31 @@ main .right .pricing-inner-container .pricing-inner-icon span{
 .sell-container .sell-inner-container .sell-inner-left{
     height: 100%;
     width: 50%;
-    
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     
+    
+}
+
+.sell-container .sell-inner-container .sell-inner-left:hover .inputs-title{
+    transition: all .3s ease-in; 
+    background-color: #FF3F55;
+    cursor: pointer;
+    border: none;
+}
+
+.sell-container .sell-inner-container .sell-inner-left:hover .inputs-title h1{
+    color: white;
+    font-weight: bolder;
+    
+}
+
+
+.sell-container .sell-inner-container .sell-inner-right:hover .inputs-title h1{
+    font-size: 16px;
+    color: white;
+    font-weight: bolder;
     
 }
 
@@ -669,14 +690,15 @@ main .right .pricing-inner-container .pricing-inner-icon span{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF3F55;
-    border: brown solid 2px;
+    background-color: white;
+    
+    
     
 }
 
 .sell-container .sell-inner-container .sell-inner-left .inputs-title h1{
-    font-size: 17px;
-    color: white;
+    font-size: 16px;
+    color: black;
     font-weight: bolder;
     
 }
@@ -687,28 +709,38 @@ main .right .pricing-inner-container .pricing-inner-icon span{
     height: 92%;
     display: flex;
     justify-content: center;
-    border: red solid 1px;
+    
 }
 
 .sell-container .sell-inner-container .sell-inner-left .left-inputs .left-inner-inputs{
-    border: green solid 2px;
+    box-sizing: border-box;
+    padding-top: 50px;
     width: 70%;
     height: 100%;
+    
     
 }
 
 .sell-container .sell-inner-container .sell-inner-left .left-inputs .left-inner-inputs .select-inner{
-    border: green solid 2px;
-    height: 50px;
+    
+    height: 100px;
     width: 100%;
     
+    
+}
+
+.sell-container .sell-inner-container .sell-inner-left .left-inputs .left-inner-inputs .select-inner p{
+    font-weight: bold;
+    font-size: 14px;
+    color: #666666;
     
 }
 
 
 .sell-container .sell-inner-container .sell-inner-left .left-inputs .left-inner-inputs .select-inner select{
     
-    height: 30px;
+    margin-top: 10px;
+    height: 50px;
     width: 100%;
     
     
@@ -723,7 +755,7 @@ main .right .pricing-inner-container .pricing-inner-icon span{
     justify-content: start;
     align-items: center;
     cursor: pointer;
-    border: 1px solid #ddd;
+    border: 1px solid #D0D2D0;
     border-radius: 6px;
     font-size: 15px;
     color: rgb(150, 138, 138);
@@ -732,20 +764,132 @@ main .right .pricing-inner-container .pricing-inner-icon span{
     
 }
 
-/* .sell-container .sell-inner-container .input-item select.model{
-    height: 20%;
-    width: 50%;
-} */
-
+/*---------- sell-inner-right ------------ */
 
 
 .sell-container .sell-inner-container .sell-inner-right{
     height: 100%;
     width: 50%;
     background-color: white;
+    cursor: pointer;
+}
+
+.sell-container .sell-inner-container .sell-inner-right:hover .inputs-title{
+    transition: all .3s ease-in; 
+    background-color: #FF3F55;
+    cursor: pointer;
+    border: none;
+}
+
+
+.sell-container .sell-inner-container .sell-inner-right:hover .inputs-title h1{
+    color: white;
+    font-weight: bolder;
     
 }
 
+.sell-container .sell-inner-container .sell-inner-right .inputs-title{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    
+    
+}
+
+
+.sell-container .sell-inner-container .sell-inner-right  .inputs-title h1{
+    font-size: 16px;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+.sell-container .sell-inner-right .right-inputs{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sell-container .sell-inner-right .right-inputs .right-inner-inputs{
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 70%;
+    height: 100%;
+    
+}
+
+.sell-container .sell-inner-right .right-inputs .right-inner-inputs .select-inner{
+    height: 100px;
+    width: 100%;
+    
+    
+}
+
+.sell-container .sell-inner-right .right-inputs .right-inner-inputs .select-inner p{
+    font-weight: bold;
+    font-size: 14px;
+    color: #666666;
+    
+}
+
+
+.sell-container .sell-inner-right .right-inputs .right-inner-inputs .select-inner input{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    color: black;
+    border: 1px solid #D0D2D0;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    
+}
+
+
+.sell-container .sell-inner-right .right-inputs .right-inner-inputs .select-inner  .select-inner-image{
+    box-sizing: border-box; 
+    padding-top: 10px; 
+    height:45px;
+    
+}
+
+.sell-container .sell-inner-right .right-inputs .right-inner-inputs .select-inner-button{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    
+    
+}
+
+
+.sell-container .sell-inner-right .right-inputs .right-inner-inputs .select-inner-button button{
+    font-size: 15px;
+    background-color: #FF3F55;
+    color: white;
+    padding: 10px 40px;
+    border: 5px solid transparent;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+ 
+.sell-container .sell-inner-right .right-inputs .right-inner-inputs .select-inner-button button:hover{
+    color: #FF3F55;
+    background-color: white;
+    border: 6px red solid;
+    border-radius: 6px;
+    font-weight: 600;
+}
 
 
 /*-------------------- FOOTER ---------------------------- */
