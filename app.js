@@ -21,6 +21,13 @@ app.get('/carlist', (req,res)=>{
     res.render('site/carlist');
 })
 
+app.get('/login', (req,res)=>{
+    res.render('site/login');
+})
+app.get('/register', (req,res)=>{
+    res.render('site/register');
+})
+
 app.get('/sell', (req,res)=>{
     res.render('site/sell');
 })
