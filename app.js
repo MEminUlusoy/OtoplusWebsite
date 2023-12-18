@@ -33,6 +33,10 @@ app.get('/sell', (req,res)=>{
 })
 
 
+app.get('/cardetails', (req,res) => {
+    res.render('site/cardetails')
+})
+
 
 app.listen(port, hostname, () => {
     console.log(`Server Calısıyor, http://${hostname}:${port}/`)

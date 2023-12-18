@@ -1,0 +1,36 @@
+.car-details{
+    height: 1500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: red solid 1px;
+}
+
+.car-details .car-inner-details{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border: green solid 1px;
+}
+
+.car-inner-details-top{
+    height: 5%;
+    width: 100%;
+    border: brown solid 1px;
+}
+
+
+.car-inner-details-middle{
+    height: 50%;
+    width: 100%;
+    border: purple solid 1px;
+}
+
+
+.car-inner-details-bottom{
+    height: 40%;
+    width: 100%;
+    border: red solid 1px;
+}
