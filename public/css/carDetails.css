@@ -1,36 +1,399 @@
-.car-details{
-    height: 1500px;
+.car-details {
+  height: 1500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #f0f0f0;
+}
+
+.car-details .car-inner-details {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-inner-details-top {
+margin-top: 10px;
+margin-bottom: 10px;  
+
+padding-left: 10px;  
+background-color: #fff;
+border: 1px solid #dfdfdf;
+  height: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.car-details-top-buttons {
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+.car-details-top-buttons button {
+  height: 100%;
+  width: 190px;
+  padding: 25px;
+  color: black;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  margin-left: 8px;
+}
+
+.car-details-top-buttons button:hover {
+  min-height: 100%;
+  width: 190px;
+  border-bottom: 2px solid #ff3f55;
+  font-weight: 900;
+  cursor: pointer;
+  transition: ease-in 0.1s;
+}
+
+/* for all social containers*/
+.car-details-top-social {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+.car-details-top-social p {
+  padding: 20px;
+}
+.car-details-card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-details-socialContainer {
+  width: 52px;
+  height: 100%;
+  border-left: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e05393;
+  transition-duration: 0.3s;
+}
+.containerOne:hover {
+  background-color: #c53475;
+  transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+.containerTwo:hover {
+    background-color: #048cc2;
+    transition-duration: 0.3s;
+  }
+/* facebook*/
+.containerThree {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #2753a7;
+  transition-duration: 0.3s;
+}
+.containerThree:hover {  
+    background-color: #082966;
+    transition-duration: 0.3s;
+  }
+
+.car-details-socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.car-details-socialSvg {
+  width: 20px;
+}
+
+.car-details-socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.car-details-socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* car inner middle containers*/
+.car-inner-details-middle {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-details-middle-left {
+    
+  height: 100%;
+  width: 70%;
+}
+
+.car-details-image-container{
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
     width: 100%;
+    height: 70%;
+}
+.car-details-image{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.car-details-icons-container{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    width: 100%;
+    height: 28.3%;
+}
+.car-details-icons-inner-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.car-details-icon{
+    width: 33.333%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: red solid 1px;
+    border-left: 1px solid #dfdfdf;
 }
-
-.car-details .car-inner-details{
+.car-details-icon img{
+    height: 100px;
+    width: 100px;
+}
+.car-details-middle-right {
     height: 100%;
-    width: 60%;
+    width: 30%;
+}
+.car-details-middle-info{
+    height: 70%;
+    width: 100%;
+    margin-left: 10px;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
     display: flex;
     flex-direction: column;
-    border: green solid 1px;
+    align-items: center;
+    justify-content: center;
+}
+.car-details-middle-info-inner{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+.car-details-brand-container p{
+    font-weight: bold;
+    color: #000;
+    font-size: 35px; 
+    padding: 10px; 
+}
+.car-details-model-container p{
+    font-weight: bold;
+    color: #707070;
+    font-size: 30px; 
+    padding: 10px; 
+}
+.car-details-price-container p{
+    margin-top: 80px;
+    font-weight: bold;
+    color:#ff3f55;
+    font-size: 40px; 
+    padding: 10px;   
+}
+.car-details-button{
+    height: 25%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.car-details-button button{
+        height: 50px;
+        width: 300px;
+        color: white;
+        margin-top: 15px;
+        padding: 12px 18px;
+        font-size: 15px;
+        background-color: #ff3f55;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+      
+}
+.car-details-button button:hover {
+    background-color: white;
+    border: 1px solid #ff3f55;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+    color:#ff3f55;
+  }
+
+.car-details-middle-mail{
+    width: 100%;
+    height: 28.3%;
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;   
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
-.car-inner-details-top{
-    height: 5%;
-    width: 100%;
-    border: brown solid 1px;
+.car-details-middle-mail-inner{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.car-details-mail-title p {
+    font-weight:400;
+    color: #2c2c2c;
+    font-size: 20px; 
+    padding: 10px; 
 }
 
+.car-details-mail-button button{
+  height: 50px;
+  width: 300px;
+  color: white;
+  margin-top: 15px;
+  padding: 12px 18px;
+  font-size: 15px;
+  background-color: #2f6818;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
 
-.car-inner-details-middle{
-    height: 50%;
-    width: 100%;
-    border: purple solid 1px;
+}
+.car-details-mail-button button:hover {
+background-color: white;
+border: 1px solid  #2f6818;
+cursor: pointer;
+transition: ease-in 0.2s;
+color: #2f6818;
 }
 
+/* car inner bottom containers*/
+.car-inner-details-bottom {
+  height: 40%;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+}
+.car-details-specs-table{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.car-inner-details-bottom{
-    height: 40%;
-    width: 100%;
-    border: red solid 1px;
+}
+.car-details-vehicle-features{
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.car-details-vehicle-features li{
+  height: 50px;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: #707070 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.car-details-list-detail{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.car-details-bottom-name{
+font-size: 15px;
+color: #707070;
+padding: 10px;
+}
+.car-details-bottom-icon{
+fill: #707070;
+}
+.car-details-content{
+font-size: 15px;
+color: #707070;
+padding: 10px;
+}
+.car-details-bottom-p{
+  font-size: 15px;
+color: #707070;
+padding-top: 20px;
 }
