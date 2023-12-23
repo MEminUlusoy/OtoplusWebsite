@@ -37,7 +37,7 @@
             </select>
           </div>
         </div>
-        <hr class="carlist-hr">
+        <hr class="carlist-hr" />
 
         <div class="carlist-dropdown-box">
           <p class="carlist-dropdown-title">Model</p>
@@ -51,7 +51,7 @@
             </select>
           </div>
         </div>
-        <hr class="carlist-hr">
+        <hr class="carlist-hr" />
 
         <div class="carlist-dropdown-box">
           <p class="carlist-dropdown-title">Model Yılı</p>
@@ -65,7 +65,7 @@
             </select>
           </div>
         </div>
-        <hr class="carlist-hr">
+        <hr class="carlist-hr" />
 
         <div class="carlist-dropdown-box">
           <p class="carlist-dropdown-title">Vites Modeli</p>
@@ -78,7 +78,7 @@
             </select>
           </div>
         </div>
-        <hr class="carlist-hr">
+        <hr class="carlist-hr" />
 
         <div class="carlist-dropdown-box">
           <p class="carlist-dropdown-title">Kilometre</p>
@@ -92,7 +92,7 @@
             </select>
           </div>
         </div>
-        <hr class="carlist-hr">
+        <hr class="carlist-hr" />
 
         <div class="carlist-dropdown-box">
           <p class="carlist-dropdown-title">Yakıt</p>
@@ -110,391 +110,45 @@
       </div>
 
       <div class="carlist-cars">
-        <div class="carlist-carcontainer">
-          <a href="/cardetails">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
+        {{#each car}}
+          <div class="carlist-carcontainer">
+            <a href="/cardetails">
+              <div class="carcontainer-image-container">
+                <img
+                  class="carcontainer-image"
+                  src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
+                  alt="car"
+                />
+                <div class="carlist-hover-button">
+                  <button>Satın Al</button>
+                </div>
               </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-         <div class="carlist-carcontainer">
-          <a href="/">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
+              <div class="carcontainer-name-container">
+                <p class="carcontainer-name">
+                  {{brand}} {{model}}
+                </p>
               </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-         <div class="carlist-carcontainer">
-          <a href="/cardetails">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
+
+              <div class="carcontainer-info-container">
+                <p class="carcontainer-info">
+                  Yakıt : {{fuel}}
+                  <br />
+                  Yıl : {{modelYear}}
+                  <br />
+                  Vites : {{gear}}
+                  <br />
+                  Kilometre : {{km}}
+                  <br />
+                </p>
               </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-         <div class="carlist-carcontainer">
-          <a href="/">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
+              <div class="carcontainer-price-container">
+                <p class="carcontainer-price">
+                  {{price}} TL
+                </p>
               </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-         <div class="carlist-carcontainer">
-          <a href="/">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
-              </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-         <div class="carlist-carcontainer">
-          <a href="/">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
-              </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-                 <div class="carlist-carcontainer">
-          <a href="/">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
-              </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-         <div class="carlist-carcontainer">
-          <a href="/">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
-              </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-         <div class="carlist-carcontainer">
-          <a href="/">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
-              </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-         <div class="carlist-carcontainer">
-          <a href="/">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
-              </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
-         <div class="carlist-carcontainer">
-          <a href="/">
-            <div class="carcontainer-image-container">
-              <img
-                class="carcontainer-image"
-                src="https://www.kayak.com/news/wp-content/uploads/sites/19/2023/11/THEME_CAR_TRANSPORTATION-shutterstock-portfolio_677345539-scaled-1.jpg"
-                alt="car"
-              />
-              <div class="carlist-hover-button">
-                <button>Satın Al</button>
-              </div>
-            </div>
-            <div class="carcontainer-name-container">
-              <p class="carcontainer-name">
-                2017 Renault
-              </p>
-            </div>
-            
-            <div class="carcontainer-info-container">
-              <p class="carcontainer-info">
-                Yakıt : Dizel
-                <br />
-                Vites : Otomatik
-                <br />
-                Kilometre : 68.789
-                <br />
-              </p>
-            </div>
-            <div class="carcontainer-price-container">
-              <p class="carcontainer-price">
-                884.000TL
-              </p>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
+        {{/each}}
       </div>
     </div>
 

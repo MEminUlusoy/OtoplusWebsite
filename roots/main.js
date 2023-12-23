@@ -8,24 +8,32 @@ router.get('/', (req,res)=>{
 })
 
 router.get('/carlist', (req,res)=>{
-    res.render('site/carlist');
+    Car.find({}).lean().then(car => {
+        res.render('site/carlist'  , {
+            car: car
+        })
+    })
+
+    
 })
 
 router.get('/login', (req,res)=>{
-    res.render('site/login');
+    res.render('site/login')
 })
 router.get('/register', (req,res)=>{
-    res.render('site/register');
+    res.render('site/register')
 })
 
 router.get('/sell', (req,res)=>{
-    res.render('site/sell');
+    res.render('site/sell')
 })
 
 router.post('/sell' , (req , res)=> {
     Car.create(req.body)
     res.redirect('/')
 })
+
+
 
 router.get('/cardetails', (req,res) => {
     res.render('site/cardetails')
