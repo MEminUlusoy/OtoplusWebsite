@@ -1,103 +1,107 @@
-<div class="sell-container">
+<form action="/sell" method="POST">
+  <div class="sell-container">
     <div class="sell-inner-container">
-        <div class="sell-inner-left">
 
-            <div class="inputs-title">
-                <h1>Araç Marka - Model Seçiniz</h1>
-            </div>
-            <div class="left-inputs">
-                <div class="left-inner-inputs">
-                    <form action="">
-                        <div class="select-inner">
-                            <p>Marka</p>
-                            <select required class="brand" name="brand" id="brand">
-                                <option value="" disabled selected hidden></option>
-                                <option value="volvo">Volvo</option>
-                                <option value="bmw">BMW</option>
-                                <option value="mercedes">Mercedes</option>
-                                <option value="audi">Audi</option>
-                            </select>
-                        </div>
+      <div class="sell-inner-left">
 
-                        <div class="select-inner">
-                            <p>Model</p>
-                            <select required class="model" name="model" id="model">
-                                <option value="" disabled selected hidden></option>
-                                <option value="corolla">Corolla</option>
-                                <option value="egea">Egea</option>
-                                <option value="meriva">Meriva</option>
-                                <option value="passat">Passat</option>
-                            </select>
-                        </div>
-
-                        <div class="select-inner">
-                            <p>Model Yılı</p>
-                            <select required class="year" name="year" id="year">
-                                <option value="" disabled selected hidden></option>
-                                <option value="year1">2022</option>
-                                <option value="year2">2021</option>
-                                <option value="year3">2020</option>
-                                <option value="year4">2019</option>
-                            </select>
-                        </div>
-
-                        <div class="select-inner">
-                            <p>Yakıt Tipi</p>
-                            <select required class="fuel" name="fuel" id="fuel">
-                                <option value="" disabled selected hidden></option>
-                                <option value="year1">Benzin</option>
-                                <option value="year2">Dizel</option>
-
-                            </select>
-                        </div>
-
-                        <div class="select-inner">
-                            <p>Vites Tipi</p>
-                            <select required class="gear" name="gear" id="gear">
-                                <option value="" disabled selected hidden></option>
-                                <option value="year1">Otomatik</option>
-                                <option value="year2">Manuel</option>
-
-                            </select>
-                        </div>
-
-                    </form>
-
-                </div>
-            </div>
+        <div class="inputs-title">
+          <h1>Araç Marka - Model Seçiniz</h1>
         </div>
+        <div class="left-inputs">
+          <div class="left-inner-inputs">
 
-        <div class="sell-inner-right">
-            <div class="inputs-title">
-                <h1>Araç Detaylarını Seçerek Devam Ediniz</h1>
+            <div class="select-inner">
+              <p>Marka</p>
+              <select required class="brand" name="brand" id="brand">
+                <option value="" disabled selected hidden></option>
+                <option value="Volvo">Volvo</option>
+                <option value="BMW">BMW</option>
+                <option value="Opel">Opel</option>
+                <option value="Audi">Audi</option>
+              </select>
             </div>
-            <div class="right-inputs">
-                <div class="right-inner-inputs">
-                    <form action="">
-                        <div class="select-inner">
-                            <p>Kilometre</p>
-                            <input type="text" name="km" required="required">
-                        </div>
 
-                        <div class="select-inner">
-                            <p>Fiyat</p>
-                            <input type="text" name="cost" required="required">
-                        </div>
-
-                        <div class="select-inner">
-                            <p>Aracınızın Resmi</p>
-                            <input class="select-inner-image"  class="car-image" name="car_image" type="file" required="required" >
-                        </div>
-                        
-                        <div class="select-inner-button">
-                           <button style="" class="main-btn" type="submit">Araç Oluştur</button>
-                        </div>
-                        
-
-                    </form>
-
-                </div>
+            <div class="select-inner">
+              <p>Model</p>
+              <select required class="model" name="model" id="model">
+                <option value="" disabled selected hidden></option>
+                <option value="XC90">XC90</option>
+                <option value="5.20">5.20</option>
+                <option value="Meriva">Meriva</option>
+                <option value="A6">A6</option>
+              </select>
             </div>
+
+            <div class="select-inner">
+              <p>Model Yılı</p>
+              <select required class="year" name="modelYear" id="modelYear">
+                <option value="" disabled selected hidden></option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+              </select>
+            </div>
+
+            <div class="select-inner">
+              <p>Yakıt Tipi</p>
+              <select required class="fuel" name="fuel" id="fuel">
+                <option value="" disabled selected hidden></option>
+                <option value="Benzin">Benzin</option>
+                <option value="Dizel">Dizel</option>
+
+              </select>
+            </div>
+
+            <div class="select-inner">
+              <p>Vites Tipi</p>
+              <select required class="gear" name="gear" id="gear">
+                <option value="" disabled selected hidden></option>
+                <option value="Otomatik">Otomatik</option>
+                <option value="Manuel">Manuel</option>
+
+              </select>
+            </div>
+
+          </div>
         </div>
+      </div>
+
+      <div class="sell-inner-right">
+        <div class="inputs-title">
+          <h1>Araç Detaylarını Seçerek Devam Ediniz</h1>
+        </div>
+        <div class="right-inputs">
+          <div class="right-inner-inputs">
+
+            <div class="select-inner">
+              <p>Kilometre</p>
+              <input type="text" name="km" required="required" />
+            </div>
+
+            <div class="select-inner">
+              <p>Fiyat</p>
+              <input type="text" name="price" required="required" />
+            </div>
+
+            {{! <div class="select-inner">
+              <p>Aracınızın Resmi</p>
+              <input
+                class="select-inner-image"
+                class="car-image"
+                name="car_image"
+                type="file"
+                required="required"
+              />
+            </div> }}
+
+            <div class="select-inner-button">
+              <button style="" class="main-btn" type="submit">Araç Oluştur</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+</form>
