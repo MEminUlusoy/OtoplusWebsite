@@ -4,6 +4,9 @@ const exphbs = require('express-handlebars')
 const app = express()
 const port = 3000
 const hostname = '127.0.0.1'
+const main = require("./roots/main")
+
+
 
 app.use(express.static('public'))
 
@@ -13,31 +16,14 @@ app.set('view engine', 'handlebars')
 
 
 //* main.handlebars içindeki body toplam 6 tane süslü parantez içinde olacak.
-app.get('/', (req,res)=>{
-    res.render('site/home');
-})
 
-app.get('/carlist', (req,res)=>{
-    res.render('site/carlist');
-})
+const mongoose = require('mongoose')
+mongoose.connect('mongodb://127.0.0.1/test2_db')
 
-app.get('/login', (req,res)=>{
-    res.render('site/login');
-})
-app.get('/register', (req,res)=>{
-    res.render('site/register');
-})
-
-app.get('/sell', (req,res)=>{
-    res.render('site/sell');
-})
-
-
-app.get('/cardetails', (req,res) => {
-    res.render('site/cardetails')
-})
-
+app.use("/",main)
 
 app.listen(port, hostname, () => {
     console.log(`Server Calısıyor, http://${hostname}:${port}/`)
 })
+
+
